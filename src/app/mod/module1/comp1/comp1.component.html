@@ -1,0 +1,18 @@
+<p>ANGULARpIPES works!</p>
+<label>Uppercase:</label> {{ name | uppercase }}<br>
+<label>Lowercase:</label> {{ name | lowercase }}<br>
+<label>Currency:</label> 
+USD :{{ 100 | currency:"USD" }},<br>
+INR :{{ 100 | currency:"INR" }},<br>
+AMD :{{ 100 | currency:"AMD" }},<br>
+KWD :{{ 100 | currency:"KWD" }},<br>
+WON :{{ 100 | currency:"WON" }}<br>
+<label>Percentage:</label> {{ 0.8333 | percent }}<br>
+<h3 style="color: rgb(249, 39, 74)">{{ todayDate }}</h3><br>
+<label >Date (Formatted):</label>  {{ todayDate | date:"d/M/y" }}<br>
+<label>Short Time:</label> {{ todayDate | date:"shortTime" }}<br>
+<label>Long Time:</label> {{ todayDate | date:"longTime" }}<br>
+<label>Weeks Slice:</label> {{ weeks | slice:2:3 }}<br>
+<label>JSON:</label> {{ mjson | json }}<br>
+<input type="text" [(ngModel)]="q">
+<label>Greater Than:</label> {{ q | gretter }}
